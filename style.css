@@ -1,0 +1,284 @@
+/* css reset */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+::selection {
+    color: red;
+    background: yellow;
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* navigation bar  */
+#navbar{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .8 ;
+    /* backdrop-filter: blur(5px); */
+}
+
+/* LOGO and Image */
+#logo{
+    margin: 10px 34px;;
+}
+
+#logo img{
+    height:90px;
+    width: 90px;
+    margin:3px 6px;
+}
+
+/* list styling */
+#navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+#navbar ul li{
+    font-size :1.3rem;
+}
+#navbar ul li a{
+    cursor: pointer;
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+.whatsapp{
+  position: fixed;
+  right: 4px;
+  bottom: 22px;
+}
+
+nav i{
+    display: flex;
+    position: relative;
+
+    margin-left:35px;
+    
+}
+/* home section */
+            #home{
+                display: flex;
+                flex-direction: column;
+                padding:3px 200 ;
+                justify-content: center;
+                align-items: center; 
+                height:590px;
+            } 
+
+    #home::before{
+    content: "";
+    background:url('https://www.thebalancesmb.com/thmb/1VlLUwxUU2NbhxRy-_YlA37_t-s=/1920x1080/smart/filters:no_upscale()/brick-wall-1834784_1920-583893813df78c6f6af606c3.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+    opacity: .90;
+    /* margin-top: -6%; */
+}     
+
+#home h1{
+    color:rgba(226, 16, 16, 0.76);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    
+}
+#home p{
+    color: white;
+    text-align: center;
+     font-size: 1.5rem;
+     font-family: 'Bree Serif', serif;
+}
+/* services section */
+#services{
+    display:flex;
+    margin:34px;
+}
+#services .box{
+border: 2px solid brown;
+padding: 34px;
+margin: 3px 6px;
+border-radius: 30px;
+background-color: rgb(211, 205, 211);
+}
+#services .box img{
+height: 160px;
+margin: auto;
+display: block;
+}
+#services .box p{
+    font-family: 'Bree Serif' , serif;
+}
+
+
+
+/* utility class */
+
+.h-primary{
+    font-size:3.8rem;
+    padding:12px;
+    text-align: center;
+    font-family: 'Bree Serif' , serif;
+}
+.h-secondary{
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: 'Bree Serif' , serif;
+}
+.btn1{
+    width: 170px;
+    margin: 25px 9px;
+    background-color: transparent;
+    color: white;
+    padding:4px px;
+    border:2px solid rgb(12, 12, 12);
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.btn1:hover{
+    background-color: black;
+    color: white;
+}
+.fa{
+    margin: 0;
+}
+.right{
+    display: inline-block;
+    position: absolute;
+    top:20px;
+    right:34px;
+    /* border:2px solid rgb(0, 255, 221); */
+    color: white;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin:17px;
+    font-size:1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn2{
+    /* width: 30%; */
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(19, 15, 15);
+    color: white;
+    margin:17px;
+    font-size:1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+/* client section */
+#client-section::before{
+   content: "";
+   position: absolute;
+   background:url('https://s3.ap-south-1.amazonaws.com/wibrate2019/Live/Store_Images/Store_Background/wib_1626160755_wib1594893775wib1592471202Banner-165ShreeHarikrushnaRestaurant1.png') no-repeat center/cover;
+   width: 100%;
+   height: 100%;
+   z-index:-1 ;
+   opacity: .3;
+}
+#client-section{
+    /* height: 344px; */
+    position: relative;
+}
+.clients img{
+    height: 124px;
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 30px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .7;
+    background: url('https://wallpaperaccess.com/full/3124512.jpg') center;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+
+#contact-box form{
+    width: 40%;
+    
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif' , serif;; 
+   
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
